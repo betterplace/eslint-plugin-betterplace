@@ -1,13 +1,16 @@
 {
-  "name": "@sayari/eslint-plugin",
+  "name": "eslint-plugin-betterplace",
   "license": "ISC",
   "version": "0.0.1-rc.4",
-  "description": "custom lint rules built for Sayari Graph",
+  "description": "custom lint rules built for betterplace",
   "author": "Sayari Analytics",
+  "contributors": [
+    "betterplace.org"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sayari-analytics/eslint-plugin-sayari.git"
+    "url": "https://github.com/betterplace/eslint-plugin-betterplace.git"
   },
   "scripts": {
     "lint": "eslint ./"

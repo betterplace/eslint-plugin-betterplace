@@ -1,6 +1,6 @@
-# eslint-plugin-sayari
+# eslint-plugin-betterplace
 
-Custom rules built for Sayari Graph
+Custom rules built for betterplace
 
 ## Installation
 
@@ -10,31 +10,31 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `@sayari/eslint-plugin`:
+Next, install `eslint-plugin-betterplace`:
 
 ```
-$ npm install @sayari/eslint-plugin --save-dev
+$ npm install eslint-plugin-betterplace --save-dev
 ```
 
 ## Usage
 
 ### Option 1
 
-Add the `sayari` plugin recommended config to the extends section of your `.eslintrc` configuration file.
+Add the `betterplace` plugin recommended config to the extends section of your `.eslintrc` configuration file.
 
 ```json
 {
-  "extends": ["plugin:@sayari/recommended"]
+  "extends": ["plugin:betterplace/recommended"]
 }
 ```
 
 ### Option 2
 
-Add `sayari` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `betterplace` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-  "plugins": ["@sayari"]
+  "plugins": ["betterplace"]
 }
 ```
 
@@ -43,7 +43,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "@sayari/rule-name": 2
+    "betterplace/rule-name": 2
   }
 }
 ```

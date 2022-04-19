@@ -1,5 +1,5 @@
 /**
- * @fileoverview Custom rules built for Sayari Graph
+ * @fileoverview Custom rules built for betterplace
  * @author Sayari Analytics
  */
 'use strict'
@@ -14,18 +14,6 @@ const allRules = {
   'polyfill-resize-observer': require('./lib/rules/polyfill-resize-observer')
 }
 
-const rulesConfig = {
-  plugins: ['@sayari'],
-  parserOptions: {
-    ecmaFeatures: { jsx: true }
-  },
-  rules: {
-    '@sayari/strict-mui-imports': 2,
-    '@sayari/no-unwrapped-jsx-text': 2,
-    '@sayari/polyfill-resize-observer': 2,
-  }
-}
-
 //------------------------------------------------------------------------------
 // Plugin Definition
 //------------------------------------------------------------------------------
@@ -33,8 +21,15 @@ const rulesConfig = {
 module.exports = {
   rules: allRules,
   configs: {
-    recommended: rulesConfig,
-    all: rulesConfig
+    recommended: {
+      plugins: ['betterplace'],
+      parserOptions: {
+        ecmaFeatures: { jsx: true }
+      },
+      rules: {
+        'betterplace/no-unwrapped-jsx-text': 2,
+      }
+    }
   }
 }
 
